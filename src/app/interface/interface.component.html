@@ -1,1 +1,49 @@
-<p>interface works!</p>
+
+<div class="container">
+    <br>
+    <div class="Header">
+      <h3>Github profile search </h3>
+    </div>
+    <form action="" class="search-form">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Enter profile name" [(ngModel)]="username" name="username" (keyup)="findProfile()">
+        </div>
+      </form>
+      <hr>
+      <div *ngIf="profile">
+        <div class="row">
+          <div class="col-md-4 padd">
+            <h6> Profile Name :{{profile.name}} </h6>
+            <h5>Username : {{profile.login}}</h5>
+            <a href="{{profile.html_url}}" target="_blank" class="btn btn-outline-success btn-sm">View profile on github</a><hr>
+            <img src="{{profile.avatar_url}}" class="img-circle img-responsive" alt="Profile Image"><br><br>
+          </div>
+          <div class="col-md-8 padd">
+            <div class="card">
+              <div class="card-title">
+                  <p> <span class="label label-success">Number Of Repositories :{{profile.public_repos}}</span></p>
+  
+                  <h3 class="">Repositories</h3>
+  
+              </div>
+              <div class="card-body">
+                  <div class="" *ngFor="let repo of repos">
+                      <ul>
+                      <li>
+  
+                        <h4>{{repo.name }}<br></h4>
+                        <p>
+                        {{repo.description}}
+                        <a href="{{repo.html_url}}" target="_blank" class="btn btn-sm btn-outline-info pull-right">View this project on github</a>
+                      </p>
+                      </li>
+                      </ul>
+                  </div>
+              </div>
+            </div>
+  
+            </div>
+        </div>
+      </div>
+    </div>
+  
