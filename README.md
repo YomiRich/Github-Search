@@ -1,9 +1,12 @@
-# ProfileSearch
+# Profile Search
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.4.
 
 ## Description
 This is web app that enables the user to view and search various Github accounts.
+
+## Built By
+Yomi Rich.
 
 ## Development server
 
