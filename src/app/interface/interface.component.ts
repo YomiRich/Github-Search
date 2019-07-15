@@ -6,9 +6,9 @@ import { Repos } from '../repositories';
 
 
 @Component({
-  selector: 'app-inteface',
-  templateUrl: './inteface.component.html',
-  styleUrls: ['./inteface.component.css']
+  selector: 'app-interface',
+  templateUrl: './interface.component.html',
+  styleUrls: ['./interface.component.css']
 })
 export class InterfaceComponent implements OnInit {
   username:string;

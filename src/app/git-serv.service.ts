@@ -23,7 +23,7 @@ export class GitServe {
 
   private username: string;
   private clientid = '4900d3dcfcb7e3742215';
-  private clientsecret = 'f6eeacbb082b686c6103070652c2db1ae2ac7797';
+  private clientsecret = '625b7f159f295828cc3824752bd0fe95790202dd';
   constructor(private http: Http) {
     // tslint:disable-next-line: quotemark
     // console.log("Service is now ready!");

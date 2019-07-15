@@ -1,2 +1,5 @@
-export class Repositories {
-}
+export class Repos {
+    name: string;
+    description: string;
+  }
+  
