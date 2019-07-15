@@ -14,15 +14,19 @@
       <div *ngIf="profile">
         <div class="row">
           <div class="col-md-4 padd">
+              <br>
             <h6> Profile Name :{{profile.name}} </h6>
+            <br>
             <h5>Username : {{profile.login}}</h5>
-            <a href="{{profile.html_url}}" target="_blank" class="btn btn-outline-success btn-sm">View profile on github</a><hr>
+            <br>
+            <a href="{{profile.html_url}}" target="_blank" class="btn btn-primary btn-sm">View profile on github</a><hr>
             <img src="{{profile.avatar_url}}" class="img-circle img-responsive" alt="Profile Image"><br><br>
           </div>
           <div class="col-md-8 padd">
             <div class="card">
               <div class="card-title">
-                  <p> <span class="label label-success">Number Of Repositories :{{profile.public_repos}}</span></p>
+                  <br>
+                  <p> <span class="label label-success">Number Of Repositories : {{profile.public_repos}}</span></p>
   
                   <h3 class="">Repositories</h3>
   
@@ -35,7 +39,8 @@
                         <h4>{{repo.name }}<br></h4>
                         <p>
                         {{repo.description}}
-                        <a href="{{repo.html_url}}" target="_blank" class="btn btn-sm btn-outline-info pull-right">View this project on github</a>
+                        <br>
+                        <a href="{{repo.html_url}}" target="_blank" class="btn btn-sm btn-primary pull-right">View this project on github</a>
                       </p>
                       </li>
                       </ul>
